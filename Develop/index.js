@@ -46,6 +46,7 @@ function writeToFile(fileName, data) {
 }
 
 // This function will initialize app.
+// this won't work until I update the generateMarkdown.js file.  I have to pass "file name" and "data" when using the writeToFile functiom. 
 function init() {
     inquirer
     .prompt(questions)
