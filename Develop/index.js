@@ -1,9 +1,9 @@
-// all of my packages. 
+// All of my packages. 
 // The inquirer package is needed to get the users input from the terminal.
 const inquirer = require('inquirer');
 // The fs package is needed to write the README.md file to the file system.
 const fs = require('fs');
-const generateMarkdown = require('generate-markdown');
+const generateMarkdown = require('./utils/generateMarkdown');
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -41,12 +41,12 @@ function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, (error) => {
         if (error) {
             console.error(error);
-        }
+        } return console.log("You've successfully generated the README file!")
     });
 }
 
-// TODO: Create a function to initialize app
-function init() {}
+// // TODO: Create a function to initialize app
+// function init() {}
 
 // Function call to initialize app
-init();
+// init();
