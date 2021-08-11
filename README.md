@@ -1,3 +1,6 @@
+
+
+
 # README Generator
 
 #### As a developer, sometimes creating a README.md file can take up a lot of time. This is less time you get to spend creating something awesome. This JavaScript application will generate one for you.
@@ -21,6 +24,7 @@ node index.js
 After you run the command above, the user will be prompted to answer a series of questions within the terminal window about their project.  The application will then take the user's inputs and insert them into the a newly generated README.md file.
 
 ## Test
+https://user-images.githubusercontent.com/74510050/128964167-f207d0db-3a48-4d22-8a07-80d25f690c2b.mp4
 
 ## Questions
 Do you have questions? Contact me here:
