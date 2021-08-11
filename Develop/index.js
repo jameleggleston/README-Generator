@@ -3,6 +3,7 @@
 const inquirer = require('inquirer');
 // The fs package is needed to write the README.md file to the file system.
 const fs = require('fs');
+// This is needed to connect the two javascript files.
 const generateMarkdown = require('./utils/generateMarkdown');
 
 // Questions for user to input
@@ -70,7 +71,6 @@ function writeToFile(fileName, data) {
 }
 
 // This function will initialize app.
-// this won't work until I update the generateMarkdown.js file.  I have to pass "file name" and "data" when using the writeToFile functiom. 
 function init() {
     inquirer
     .prompt(questions)
