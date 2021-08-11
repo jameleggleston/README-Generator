@@ -57,7 +57,7 @@ ${response.description}
 
 * [Installation](#Installation)
 * [Usage](#Usage)
-* [Tests](#Tests)
+* [Test](#Test)
 * [Questions](#Questions)
 * [Credits](#Credits)
 * [License](#License)
@@ -68,7 +68,7 @@ ${response.install}
 ## Usage
 ${response.usage}
 
-## Tests
+## Test
 ${response.test}
 
 ## Questions
