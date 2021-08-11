@@ -33,7 +33,28 @@ const questions = [
         message: "Enter project test information",
         name: "test",
     },
-    
+    {
+        type:"input",
+        message: "Enter any collaborators and their contact info for your project",
+        name: "credits"
+
+    },
+    {
+        type:"input",
+        message: "Enter your github username",
+        name: "github"
+    },
+    {
+        type:"input",
+        message: "Enter your Email address",
+        name: "email"
+    },
+    {
+        type:"list",
+        message: "Choose your project's license:",
+        choices:["Apache License 2.0", "GNU GPLv3", "ISC", "MIT", "None"],
+        name: "license",
+    }
 ];
 
 // This function will write the README file.
@@ -41,7 +62,10 @@ function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, (error) => {
         if (error) {
             console.error(error);
-        } return console.log("You've successfully generated the README.md file!")
+        }
+        else { 
+            console.log("You've successfully generated the README.md file!")
+        }
     });
 }
 
@@ -51,9 +75,10 @@ function init() {
     inquirer
     .prompt(questions)
     .then((response) => {
-        writeToFile("README.md");
+        writeToFile("README.md", generateMarkdown(response));
     });
 }
 
 // Function call to initialize app
  init();
+  
