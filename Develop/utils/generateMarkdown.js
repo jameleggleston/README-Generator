@@ -33,7 +33,7 @@ function renderLicenseLink(license) {
   }
 }
 
-// TODO: Create a function that returns the license section of README
+// This function will return the license section of README
 
 function renderLicenseSection(license) {
   if (license !== "None") {
@@ -45,7 +45,7 @@ function renderLicenseSection(license) {
   }
 }
 
-// the function to generate markdown for README
+// This function will generate markdown for README
 function generateMarkdown(response) {
   return `# ${response.title}
   ${renderLicenseBadge(response.license)}
