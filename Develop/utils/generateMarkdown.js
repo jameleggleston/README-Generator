@@ -69,7 +69,7 @@ ${response.install}
 ${response.usage}
 
 ## Tests
-${response.tests}
+${response.test}
 
 ## Questions
 Do you have questions? Contact me here:
